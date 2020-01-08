@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/simayuhe/E/DQFDGAIL_V0/model/DQfD_model_CartPole-0313"
+all_model_checkpoint_paths: "/home/simayuhe/E/DQFDGAIL_V0/model/DQfD_model_CartPole-0313"

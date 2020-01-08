@@ -1,0 +1,29 @@
+现在DQFD肯定是能跑起来了，GAIL也能了，但是GAIL 与VAE不能结合， GAIL与DQFD 不能结合
+所以思路是：
+先试试GAIL与DQfD能不能弄到一起去，然后再将vae接到GAIL和DQFD的整体框架中去，再设计反馈闭环的环节
+DQFD要有一个baseline的结果，GAIL要有一个baseline的结果
+
+
+现有代码：
+DQfD代码有很多，可借鉴的思路也有很多，找几个来实现一下
+比如：https://github.com/go2sea/DQfD 好像是在gym中完成的
+https://github.com/nabergh/doom_dqfd 
+
+https://github.com/openai/imitation
+gan+irl的实现
+
+https://github.com/AndyHsiao26/GAIL-Tensorflow
+
+https://github.com/ikostrikov/TensorFlow-VAE-GAN-DRAW
+
+https://github.com/junhyukoh/self-imitation-learning
+
+baseline中的gail是用在 mujoco上的，这个环境没有，但是现在要考虑的是如何得到示例
+
+https://github.com/go2sea/DQfD中的DQfD是在gym的小游戏上实现的，这里有个demo.p是一个专家数据，而其他游戏的专家数据并不是很容易获得，所以先在这个基础上试试，还不能拓展到多个游戏中，所以目前的问题是：
+
+一方面，要想办法gail用到这个DQfD中，
+另一方面，要把这个框架用到其他游戏中
+
+DQfD的代码流程，GAIL的代码流程，怎么将两个东西放到一起去，先做一个简单的拼合，然后再做更深层次的融合：
+

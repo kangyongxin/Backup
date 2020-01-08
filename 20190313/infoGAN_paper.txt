@@ -1,0 +1,23 @@
+InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets
+GAN在信息论方面的拓展， maximizes the mutual information between a small subset of the latent variables and the observation. 最大化 隐变量的子集和观测 之间的互信息。那么什么是隐变量，什么是互信息？
+能从数字形状中提取书写风格，能发现一些可视化的概念如发型等，
+
+Introduction
+
+这里对无监督学习的定义：Unsupervised learning can be described as the general problem of extracting value from unlabelled data which exists in vast quantities.
+
+we present a simple modification to the generative adversarial network objective that
+encourages it to learn interpretable and meaningful representation（希望能够学习得到可解释的有意义的特征表达）
+
+最大化的互信息是：a fixed small subset of the GAN’s noise variables and the observations ？？？？
+
+Unlike the cited prior works that strive to recover disentangled representations, InfoGAN requires
+no supervision of any kind. 
+
+Related work
+
+GAN
+
+Mutual Information for Inducing Latent Codes
+
+这里主要是对最开始输入的那个Z进行约束：一部分是不可压缩的噪声源，一部分是隐含编码，表示了数据分布中显著的结构化的语义特征（alient structured semantic features of the data distribution）。
